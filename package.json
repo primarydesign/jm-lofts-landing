@@ -1,8 +1,8 @@
 {
-  "name": "jm-lofts-micro",
+  "name": "jm-lofts-landing",
   "private": true,
   "version": "1.0.0",
-  "description": "JM Lofts micro-site; design and code by Primary Design.",
+  "description": "JM Lofts landing page; design and code by Primary Design.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
