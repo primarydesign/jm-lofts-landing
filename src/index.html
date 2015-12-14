@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JM Lofts | Brand New Loft Space</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body class="page">
+  <div class="page__wrapper">
+    {% include 'header.html' %}
+    <main class="main-content">
+      {% for section in sections %}
+        <section class="section" id="section-{{ loop.index }}" style="background-image: url('assets/img/background-section_{{ loop.index }}');">
+          <h3 class="section__title">Brand New Loft Space</h3>
+          <p class="section__caption">Featuring 18 loft-style apartments in historic downtown Haverhill.</p>
+        </section>
+      {% endfor %}
+      <a class="back-to-top"><img src="assets/img/up-arrow.svg"></a>
+    </main>
+    {% include 'form.html' %}
+    {% include 'footer.html' %}
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>

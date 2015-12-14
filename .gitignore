@@ -1,0 +1,56 @@
+##################
+# DW Dreamweaver #
+##################
+_notes
+dwsync.xml
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+##################
+# OSX (Yosemite) #
+##################
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+###############
+# SASS & SCSS #
+###############
+.sass-cache/
+*.css.map
+
+##############
+# NODE & NPM #
+##############
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.grunt
+.lock-wscript
+build/Release
+node_modules
+
+##################
+# CUSTOM IGNORES #
+##################
+*.sublime-project
+*.sublime-workspace
+app/
+src/assets/_assets/

@@ -1,0 +1,41 @@
+{
+  "name": "jm-lofts-micro",
+  "private": true,
+  "version": "1.0.0",
+  "description": "JM Lofts micro-site; design and code by Primary Design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": {
+    "name": "Primary Design, Inc.",
+    "url": "http://www.primarydesign.com/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-css-globbing": "^0.1.8",
+    "gulp-cssimport": "^2.1.1-b",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-data": "^1.2.0",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-nunjucks-render": "^1.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "lazypipe": "^1.0.1",
+    "require-dir": "^0.3.0",
+    "stream-browserify": "^2.0.1",
+    "yargs": "^3.30.0"
+  }
+}
