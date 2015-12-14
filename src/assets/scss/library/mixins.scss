@@ -1,0 +1,30 @@
+%valign-content {
+  font-size: 0;
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    vertical-align: middle;
+    width: 0;
+  }
+}
+%valign-text {
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    vertical-align: middle;
+    width: 0;
+  }
+}

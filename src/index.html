@@ -10,9 +10,11 @@
     {% include 'header.html' %}
     <main class="main-content">
       {% for section in sections %}
-        <section class="section" id="section-{{ loop.index }}" style="background-image: url('assets/img/background-section_{{ loop.index }}');">
-          <h3 class="section__title">Brand New Loft Space</h3>
-          <p class="section__caption">Featuring 18 loft-style apartments in historic downtown Haverhill.</p>
+        <section class="section" id="section-{{ loop.index }}" style="background-image: url('assets/img/background-section_{{ loop.index }}.jpg');">
+          <div class="headline {{ 'headline--left' if loop.index % 2 == 0 else 'headline--right' }}" id="section-{{ loop.index }}-headline">
+            <h3 class="headline__title"><span class="headline__line">{{ section.title | replace('\n', '</span><br/><span class="headline__line">')}}<span></h3>
+            <p class="headline__caption"><span class="headline__line">{{ section.caption | replace('\n', '</span><br/><span class="headline__line">')}}<span></p>
+          </div>
         </section>
       {% endfor %}
       <a class="back-to-top"><img src="assets/img/up-arrow.svg"></a>
