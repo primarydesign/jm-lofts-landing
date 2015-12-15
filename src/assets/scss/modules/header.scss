@@ -59,33 +59,44 @@ $header-dimensions: (1.7947/16.2150);
   padding: 5px;
   font-size: 3vw;
   h1 {
-    @extend %valign-text;
     height: 100%;
     font-family: $gotham;
     font-size: 1em;
     text-align: center;
     text-transform: uppercase;
   }
+  @media (min-width: $normal) {
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
 }
 .header__headline.headline--upper {
   letter-spacing: 2px;
+  border-bottom: 5px solid $black;
   @media (max-width: $mobile) {
     font-size: 1.30em;
     letter-spacing: 0.35em;
+    line-height: 1em;
   }
   @media (min-width: $normal) {
     font-size: 1.35em;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
+    line-height: 1em;
   }
 }
 .header__headline.headline--lower {
   @media (max-width: $mobile) {
     font-size: 1.20em;
     letter-spacing: 0.135em;
+    line-height: 1em;
   }
   @media (min-width: $normal) {
     font-size: 1.1em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
+    line-height: 1em;
   }
 }
 
@@ -128,163 +139,3 @@ $header-dimensions: (1.7947/16.2150);
     width: 40%;
   }
 }
-// .header {
-//   background-color: $sable;
-// }
-// .header__wrapper {
-//   border: 5px solid $black;
-//   border-left: none;
-//   border-right: none;
-//   font-size: 0;
-// }
-
-// .header__upper, .header__lower {
-//   background-color: $sable;
-//   border-bottom: 5px solid $black;
-//   display: table;
-//   width: 100%;
-//   & > * {
-//     display: table-cell;
-//     vertical-align: top;
-//   }
-//   @media (min-width: $mobile) {
-//     display: inline-table;
-//     width: auto;
-//   }
-// }
-
-// .header__logo {
-//   height: 0;
-//   width: 25%;
-//   background-color: $black;
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-size: 90% 90%;
-//   border-right: 5px solid $black;
-// }
-
-
-// .header__headlines {
-//   font-size: 3.5vw;
-// }
-// .header__headline {
-//   padding: 5px;
-//   font-family: $gotham;
-//   text-align: center;
-//   text-transform: uppercase;
-//   h1 { font-size: 1em; }
-// }
-// .header__headline.headline--upper {
-//   font-size: 1.25em;
-//   border-bottom: 5px solid $black;
-// }
-// .header__headline.headline--lower {
-//   font-size: 1.00em;
-//   @media (min-width: $mobile) {
-//     height: 100%;
-//   }
-// }
-
-
-// .header__contact {
-//   background-color: $green;
-//   border-right: 5px solid $black;
-//   font-size: 3.5vw;
-//   text-align: center;
-//   @media (min-width: $mobile) {
-//     height: 100%;
-//   }
-// }
-// .header__contact span {
-//   display: inline-block;
-//   padding: 8px;
-//   font-family: $gotham;
-//   font-size: 1em;
-//   text-align: center;
-//   text-transform: uppercase;
-//   @media (max-width: $mobile - 1px) {
-//     br { display: none; }
-//   }
-//   @media (min-width: $mobile) {
-//     font-size: 0.5em;
-//   }
-// }
-
-
-// .header__graphic {
-//   height: 100%;
-//   width: 20%;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   @media (max-width: $mobile - 1px) {
-//     background-position: 100% auto;
-//   }
-// }
-
-/*
-.header {
-  height: 0;
-  position: relative;
-  width: 100%;
-  background-color: $sable;
-  border: 5px solid $black;
-  border-left: none;
-  border-right: none;
-}
-.header__wrapper {
-  height: 100%;
-  position: absolute;
-  top: 0;left: 0;
-  width: 100%;
-  font-size: 0;
-}
-.header__wrapper > * {
-  display: inline-block;
-  height: 100%;
-  vertical-align: top;
-  width: 10%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-right: 5px solid $black;
-  font-size: 1rem;
-  &:last-child {
-    border-right: none;
-  }
-}
-.header__logo {
-  background-color: $black;
-  width: 15%;
-}
-.header__headlines {
-  background-color: $sable;
-  width: 60%;
-  font-family: $gotham;
-}
-.header__upper-headline {
-  @extend %valign-text;
-  display: block;
-  height: 55%;
-  border-bottom: 5px solid $black;
-  font-size: 4em;
-  letter-spacing: 6px;
-  text-align: justify;
-  text-transform: uppercase;
-}
-.header__lower-headline {
-  display: block;
-  height: 45%;
-}
-.header__contact {
-  background-color: $green;
-  width: 15%;
-}
-.header__facade {
-  background-color: $sable;
-  width: 10%;
-  img {
-    height: 90%;
-    width: 100%;
-  }
-}
-*/
