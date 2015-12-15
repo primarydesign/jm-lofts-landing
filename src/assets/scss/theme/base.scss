@@ -1,10 +1,14 @@
 .page {
   background-color: $sable;
-  padding: 20px;
+  @media (min-width: $normal) {
+    padding: 20px;
+  }
 }
 .page__wrapper {
   background-color: $black;
-  padding: 0 15px;
+  @media (min-width: $normal) {
+    padding: 0 15px;
+  }
 }
 .section {
   $dimensions: (8/16);

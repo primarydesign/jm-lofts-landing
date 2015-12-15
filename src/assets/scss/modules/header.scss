@@ -21,12 +21,10 @@ $header-dimensions: (1.7947/16.2150);
   }
 }
 .header__level.level--upper {
-  background-color: $rouge;
   @media (min-width: $normal) { width: 75%; }
 }
 .header__level.level--lower {
-  background-color: $sable;
-    @media (min-width: $normal) { width: 25%; }
+  @media (min-width: $normal) { width: 25%; }
 }
 .header__level > * {
   @media (max-width: $mobile) {
@@ -51,36 +49,72 @@ $header-dimensions: (1.7947/16.2150);
 
 
 .header__headlines {
-  font-size: 1rem;
+  font-size: 3vw;
   @media (min-width: $normal) {
     width: 75%;
   }
 }
 .header__headline {
   height: 50%;
+  padding: 5px;
+  font-size: 3vw;
   h1 {
     @extend %valign-text;
     height: 100%;
+    font-family: $gotham;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
-.header__headline.headline--upper {}
-.header__headline.headline--lower {}
+.header__headline.headline--upper {
+  letter-spacing: 2px;
+  @media (max-width: $mobile) {
+    font-size: 1.30em;
+    letter-spacing: 0.35em;
+  }
+  @media (min-width: $normal) {
+    font-size: 1.35em;
+    letter-spacing: 0.15em;
+  }
+}
+.header__headline.headline--lower {
+  @media (max-width: $mobile) {
+    font-size: 1.20em;
+    letter-spacing: 0.135em;
+  }
+  @media (min-width: $normal) {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+  }
+}
 
 
 .header__contact {
   background-color: $green;
-  padding: 10px 0;
   text-align: center;
-  font-size: 1rem;
+  font-size: 3vw;
   @media (max-width: $mobile) {
     @extend %valign-content;
+    padding: 10px 0;
     br { display: none; }
   }
   @media (min-width: $normal) {
     width: 60%;
   }
 }
-.header__contact span {}
+.header__contact span {
+  font-family: $gotham;
+  text-transform: uppercase;
+  @media (max-width: $mobile) {
+    font-size: 1.0em;
+    letter-spacing: 0.15em;
+  }
+  @media (min-width: $normal) {
+    font-size: 0.80em;
+    letter-spacing: 0.05em;
+  }
+}
 
 
 .header__graphic {
