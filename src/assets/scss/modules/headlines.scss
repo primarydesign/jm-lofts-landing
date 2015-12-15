@@ -1,0 +1,29 @@
+.headline {
+  position: absolute;
+}
+.headline__title {
+  font-family: $baskerville;
+  font-style: italic;
+  letter-spacing: 1.75px;
+}
+.headline__caption {
+  font-family: $scala;
+}
+.headline__line {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: $black;
+  color: $sable;
+  font-family: inherit;
+  font-size: 1em;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#section-1-headline { top: 30px; left: 0; }
+#section-2-headline { top: 30px; right: 0; }
+#section-3-headline { top: 30px; left: 0; }
+#section-4-headline { top: 30px; right: 0; }

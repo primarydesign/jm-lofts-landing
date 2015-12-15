@@ -1,7 +1,28 @@
+$header-dimensions: (1.7947/16.2150);
+.header {}
+.header__wrapper {}
+.header__wrapper > * {}
+
+
+.header__logo {}
+
+
+.header__headlines {}
+.header__headline {}
+.header__headline.headline--upper {}
+.header__headline.headline--lower {}
+
+
+.header__contact {}
+.header__contact span {}
+
+
+.header__graphic {}
+.header__graphic img {}
+
+/*
 .header {
-  $prop: (1.7947/16.2150);
   height: 0;
-  padding-bottom: calc(100% * #{$prop});
   position: relative;
   width: 100%;
   background-color: $sable;
@@ -65,3 +86,4 @@
     width: 100%;
   }
 }
+*/
