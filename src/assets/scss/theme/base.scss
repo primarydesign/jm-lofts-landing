@@ -1,11 +1,11 @@
 .page {
   background-color: $sable;
   @media (min-width: $normal) {
-    padding: 20px;
+    margin: 20px;
   }
 }
 .page__wrapper {
-  background-color: $black;
+  background-color: $gray;
   @media (min-width: $normal) {
     padding: 0 15px;
   }

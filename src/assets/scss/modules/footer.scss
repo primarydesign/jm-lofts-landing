@@ -1,31 +1,158 @@
-.footer {}
+$footer-dimensions: (1.7947/16.2150);
 
+.footer {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 2vw;
+}
 
-.footer__upper {}
-.footer__lower {}
-.footer__upper > * {}
+.back-to-top img {
+     width:40px;
+     float: right;
+     position: relative;
+     top: -54px;
+     left: 2px;
+}
+
+.footer__upper {
+  background: $sable;
+  margin-top: 5px;
+}
+.footer__lower { 
+  color: $sable;
+  background: $gray;
+  padding: 5px 0 10px;
+}
+.footer__upper > * {
+  height: 100%;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat,arial,sans-serif;     
+}
+
 .footer__lower > * {}
 
+.footer__contacta {
+    width: 29%;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+.footer__disclaimer {
+  width: 20%;
+  display: inline-block;
+  font-size: .5em;
+  font-weight: 400;
+  font-family: arial, sans-serif;
+  padding: 10px;
+  
+}
+.footer__disclaimer span {
+  display: block;    
+  text-transform: none;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.footer__signature {
+  background: url(../img/graphic-signature.svg) center no-repeat;
+  height: 60px;
+  display: inline-block;
+  width:11%;
+  text-align: center;
+  padding: 3% 0 3% 0;
+  margin: -3% 0 -1% 0;
+}
+.footer__locata {
+  width: 30%;
+  display: inline-block;
+  text-align: right;
+  padding: 10px;
+  vertical-align: top;
+}
+.footer__locatum {
+  padding: 0;
+}
+.footer__contactum {
+    padding: 0 0 1% 1%;
+}
 
-.footer__contacta {}
-.footer__locata {}
+.footer__cta {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  background: $green;
+  color: $gray;
+  padding: 1% 1% 1% 1.5%;
+  margin: 1% 1% 1% 0;
+  font-family: Montserrat,arial,sans-serif;
+  font-size: .9em;
+  font-weight: 800;
+  letter-spacing: .06em;
+  span {
+    letter-spacing: .25em;
+    }
+    span span {
+        display: block;
+        letter-spacing: .25em;
+    }
+}
 
+.footer__corporate {
+  display: inline-block;
+  font-family: "Libre Baskerville",serif;
+  font-weight: 600;
+}
+.footer__opening {
+  font-size: .7em;    
+  font-style: italic;
+  font-family: "Libre Baskerville",serif;
+  padding: 5% 0 5% 0;
+}
+.footer__corporate-contacta {
+    font-style: normal;
+    //text-transform: none;
+    //font-variant: small-caps;
+    font-size: .35em;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+    a { display: block}
+}
 
-.footer__disclaimer {}
-.footer__disclaimer span {}
+#apt-phone {
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: .55em;
+  height: 100%;
+  text-align: center;
+}
+#apt-email {
+  font-weight: 800;
+  letter-spacing: .11em;
+  height: 100%;
+  text-align: center; 
 
-
-.footer__signature {}
-
-
-.footer__locatum {}
-.footer__contactum {}
-
-
-#apt-phone {}
-#apt-email {}
-#apt-address {}
-#apt-city-state {}
+}
+#apt-address {
+    white-space: pre;
+    font-size: 1.6em;
+    font-weight: 800;
+        height: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+#apt-city-state {
+  font-weight: 800;
+  letter-spacing: 4px;
+  white-space: pre;
+  height: 100%;
+  font-size: 1.5em;
+  text-align: center;
+}
 
 
 #corporate-name {}
