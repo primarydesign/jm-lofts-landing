@@ -2,8 +2,6 @@ $header-dimensions: (1.7947/16.2150);
 
 .header {
   background-color: $sable;
-  border-top: $border-thin;
-  border-bottom: $border-thin;
 }
 .header__wrapper {
   font-size: 0;
@@ -39,16 +37,20 @@ $header-dimensions: (1.7947/16.2150);
 
 .header__logo {
   height: 100%;
-  background-color: $black;
-  background-position: center;
+  width: 20%;
+  background-color: $gray;
+  background-position: 40% 50%;
   background-repeat: no-repeat;
-  background-size: auto 90%;
-  width: 25%;
+  background-size: 75%;
+  @media (min-width: $normal) {
+    width: 25%;
+  }
 }
 
 
 .header__headlines {
   font-size: 3vw;
+  color: $gray;
   @media (min-width: $normal) {
     width: 75%;
   }
@@ -90,35 +92,37 @@ $header-dimensions: (1.7947/16.2150);
 
 
 .header__contact {
-  background-color: $green;
+  color: $gray;
+  background-color: $rouge;
   text-align: center;
-  font-size: 3vw;
-  @media (max-width: $mobile) {
-    @extend %valign-content;
-    padding: 10px 0;
-    br { display: none; }
-  }
+  font-family: Montserrat,arial,sans-serif;
+  text-transform: uppercase;
+  padding: 2%;
+  font-size: 2.4vw;
+  font-weight: 800;
+  letter-spacing: .2em;
+  span {
+    letter-spacing: 0.2em;
+    padding: 0 1% 0 2%;
+    }
+    span span {
+    letter-spacing: .2em;
+    @media (min-width: $normal) {
+      display: block;
+    }
+}
   @media (min-width: $normal) {
     width: 60%;
-  }
-}
-.header__contact span {
-  font-family: $gotham;
-  text-transform: uppercase;
-  @media (max-width: $mobile) {
-    font-size: 1.0em;
-    letter-spacing: 0.15em;
-  }
-  @media (min-width: $normal) {
-    font-size: 0.80em;
-    letter-spacing: 0.05em;
+    padding: 5% 3% 3% 5%;
+    letter-spacing: .02em;
   }
 }
 
 .header__graphic {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 110%;
+        background-image:url(../img/border-right.svg), url(../img/border-left.svg),url(../img/border-top.svg), url(../img/border-bottom.svg), url(../img/brand-building.svg);
+  background-position:right top, left bottom, left top, left bottom, center;
+  background-repeat:repeat-y, repeat-y, repeat-x, repeat-x, no-repeat;
+background-size:auto, auto, contain, contain, cover;
   @media (max-width: $mobile) {
     width: 20%;
   }
@@ -126,6 +130,7 @@ $header-dimensions: (1.7947/16.2150);
     width: 40%;
   }
 }
+
 // .header {
 //   background-color: $sable;
 // }

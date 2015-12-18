@@ -1,0 +1,8 @@
+.ragged {
+background-size:contain, contain, contain, contain,;
+        background-image:url(../img/border-right.svg), url(../img/border-left.svg),url(../img/border-top.svg), url(../img/border-bottom.svg);
+    background-position:right top, left bottom, left top, left bottom;
+    background-repeat:repeat-y, repeat-y, repeat-x, repeat-x;
+  background-size: auto;
+  background-origin:border-box;
+}
