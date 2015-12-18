@@ -2,11 +2,22 @@
 
   /* TOGGLE CONTACT FORM */
 
-  var toggle = $('.header__contact');
+  var headerToggle = $('.header__contact');
+  var footerToggle = $('.footer__cta');
   var contact = $('.contact');
 
-  toggle.on('click', function() {
+  headerToggle.on('click', function() {
     contact.toggleState('open');
+  });
+  footerToggle.on('click', function() {
+    $(this).scry({
+      duration: 450,
+      easing: 'easeInSine',
+      offset: 0,
+      complete: function() {
+        contact.toggleState('open');
+      }
+    });
   });
 
   /* VALIDATE AND SUBMIT FORM */

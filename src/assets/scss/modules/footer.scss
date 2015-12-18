@@ -12,7 +12,7 @@
   top: -54px;
   @media (max-width:480px) {
       top: 10px;
-  }  
+  }
 }
 
 .footer__upper {
@@ -23,18 +23,18 @@
     font-size: 4vw;
   }
 }
-.footer__lower { 
+.footer__lower {
   color: $sable;
   background: $gray;
   padding: 5px 0 10px;
   @media (max-width: $mobile) {
-    font-size: 2em;      
+    font-size: 2em;
   }
 }
 .footer__upper > * {
   text-align: center;
   text-transform: uppercase;
-  font-family: Montserrat,arial,sans-serif;     
+  font-family: Montserrat,arial,sans-serif;
 }
 
 .footer__lower > * {}
@@ -64,16 +64,16 @@
   background: $sable;
   @media (max-width:875px) {
         width: 26%;
-  }  
+  }
   @media (max-width:545px) {
         width: 25%;
   }
   @media (max-width:480px) {
         width: 100%;
-  }  
+  }
 }
 .footer__disclaimer span {
-  display: block;    
+  display: block;
   text-transform: none;
   text-align: left;
   hyphens: auto;
@@ -83,7 +83,7 @@
     text-align: center;
     padding: 3% 0;
     height: auto;
-  }  
+  }
 }
 .footer__signature {
   height: 3.2em;
@@ -103,7 +103,7 @@ background-size:auto, auto, contain, contain;
     }
   @media (max-width:480px) {
         width: 100%;
-  }  
+  }
 }
 .footer__locata {
   width: 38%;
@@ -119,7 +119,7 @@ background-size:auto, auto, contain, contain;
   }
   @media (max-width:480px) {
         width: 100%;
-  }  
+  }
 }
 .footer__locatum {
   padding: .5% 0 1% 0;
@@ -173,6 +173,9 @@ background-size:auto, auto, contain, contain;
         display: block;
         letter-spacing: .25em;
     }
+  &:hover {
+    background-color: lighten($rouge, 10%);
+  }
 }
 
 .footer__corporate {
@@ -181,12 +184,12 @@ background-size:auto, auto, contain, contain;
   font-weight: 600;
 }
 .footer__opening {
-  font-size: .7em;    
+  font-size: .7em;
   font-style: italic;
   font-family: "Libre Baskerville",serif;
   padding: 5% 0 5% 0;
   @media (max-width: $mobile) {
-    padding: 3% 0;      
+    padding: 3% 0;
   }
 }
 .footer__corporate-contacta {

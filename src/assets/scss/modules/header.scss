@@ -129,6 +129,9 @@ $header-dimensions: (1.7947/16.2150);
     padding: 5% 3% 3% 5%;
     letter-spacing: .02em;
   }
+  &:hover {
+    background-color: lighten($rouge, 10%);
+  }
 }
 
 .header__graphic {
