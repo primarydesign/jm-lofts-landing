@@ -5,10 +5,12 @@ $header-dimensions: (1.7947/16.2150);
 }
 .header__wrapper {
   font-size: 0;
+  position: relative;
 }
 
 .header__level {
   display: inline-block;
+  position: relative;
   @media (max-width: $mobile) {
     display: table;
     width: 100%;

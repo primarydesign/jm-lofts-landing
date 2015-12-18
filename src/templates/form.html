@@ -7,9 +7,9 @@
     <a class="contact__item" href="http://traggorthcompanies.com">traggorthcompanies.com</a>
   </address>
   <form class="contact__form form" novalidate>
-    <label class="form__field"><input class="form__input" type="text" id="form__name" name="name" placeholder="name"></label>
-    <label class="form__field"><input class="form__input" type="email" id="form__email" name="email" placeholder="email"></label>
-    <label class="form__field"><input class="form__input" type="tel" id="form__phone" name="phone" placeholder="phone"></label>
+    <label class="form__field"><input class="form__input" type="text" id="form__name" name="name" placeholder="name" required></label>
+    <label class="form__field"><input class="form__input" type="email" id="form__email" name="email" placeholder="email" data-pattern="email" required></label>
+    <label class="form__field"><input class="form__input" type="tel" id="form__phone" name="phone" placeholder="phone" data-pattern="phone" required></label>
     <label class="form__field"><textarea class="form__input input--textarea" id="form__comment" name="comment" placeholder="comment"></textarea></label>
     <input class="form__submit" type="submit" value="submit">
   </form>
