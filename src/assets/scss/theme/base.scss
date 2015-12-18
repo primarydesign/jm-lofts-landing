@@ -1,14 +1,20 @@
 .page {
+@media (min-width: $normal) {
+  margin: 10px;
   background-color: $sable;
-  @media (min-width: $normal) {
-    padding: 20px;
   }
 }
 .page__wrapper {
-  background-color: $black;
-  @media (min-width: $normal) {
-    padding: 0 15px;
-  }
+  background-color: $gray;
+   background-image:url(../img/outer-border-right.svg), url(../img/outer-border-left.svg),url(../img/outer-border-top.svg), url(../img/outer-border-bottom.svg);
+  background-position:right top, left bottom, left top, left bottom;
+  background-repeat:repeat-y, repeat-y, repeat-x, repeat-x;
+  background-size:auto, auto, contain, contain;
+  padding: 30px;
+  @media (max-width: $mobile) {
+    padding: 5px;
+    background: $gray;
+    }
 }
 .section {
   $dimensions: (8/16);

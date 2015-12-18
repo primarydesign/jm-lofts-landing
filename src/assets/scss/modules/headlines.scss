@@ -8,11 +8,14 @@
 }
 .headline__caption {
   font-family: $scala;
+  font-size: .9em;
+  line-height: 1.2em;
+  letter-spacing: 1px;
 }
 .headline__line {
   display: inline-block;
   padding: 5px 10px;
-  background-color: $black;
+  background-color: $gray;
   color: $sable;
   font-family: inherit;
   font-size: 1em;
@@ -27,3 +30,13 @@
 #section-2-headline { top: 30px; right: 0; }
 #section-3-headline { top: 30px; left: 0; }
 #section-4-headline { top: 30px; right: 0; }
+
+@media (max-width:$mobile) {
+  #section-1-headline, #section-2-headline, #section-3-headline, #section-4-headline {
+    bottom: 15px;
+    top: inherit;
+    right: inherit;
+    font-size: .75em;
+  }
+}
+    

@@ -1,31 +1,231 @@
-.footer {}
+.footer {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 2vw;
+  width: auto;
+}
 
+.back-to-top img {
+  width:40px;
+  float: right;
+  position: relative;
+  top: -54px;
+  @media (max-width:480px) {
+      top: 10px;
+  }  
+}
 
-.footer__upper {}
-.footer__lower {}
-.footer__upper > * {}
+.footer__upper {
+  background: $gray;
+  margin-top: 5px;
+  color: $gray;
+  @media (max-width:480px) {
+    font-size: 4vw;
+  }
+}
+.footer__lower { 
+  color: $sable;
+  background: $gray;
+  padding: 5px 0 10px;
+  @media (max-width: $mobile) {
+    font-size: 2em;      
+  }
+}
+.footer__upper > * {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Montserrat,arial,sans-serif;     
+}
+
 .footer__lower > * {}
 
+.footer__contacta {
+  width: 27%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  @media (max-width: 875px) {
+     display: inline;
+  }
+}
+.footer__contactum {
+  padding: 1.5%;
+  background-color: $sable;
+  @media (max-width: $mobile) {
+    padding: 1%;
+    }
+}
+.footer__disclaimer {
+  width: 15%;
+  display: inline-block;
+  font-size: .45em;
+  font-weight: 400;
+  font-family: arial, sans-serif;
+  background: $sable;
+  @media (max-width:875px) {
+        width: 26%;
+  }  
+  @media (max-width:545px) {
+        width: 25%;
+  }
+  @media (max-width:480px) {
+        width: 100%;
+  }  
+}
+.footer__disclaimer span {
+  display: block;    
+  text-transform: none;
+  text-align: left;
+  hyphens: auto;
+  padding: 8%;
+  height: 7.1em;
+  @media (max-width:480px) {
+    text-align: center;
+    padding: 3% 0;
+    height: auto;
+  }  
+}
+.footer__signature {
+  height: 3.2em;
+  display: inline-block;
+  width:14%;
+  vertical-align: top;
+  background-image:url(../img/border-right.svg), url(../img/border-left.svg),url(../img/border-top.svg), url(../img/border-bottom.svg), url(../img/graphic-signature.svg);
+  background-position:right top, left bottom, left top, left bottom, center;
+  background-repeat:repeat-y, repeat-y, repeat-x, repeat-x, no-repeat;
+background-size:auto, auto, contain, contain;
+  background-color: $sable;
+  @media (max-width:875px) {
+        width: 28%;
+  }
+  @media (max-width:542px) {
+        width: 25%
+    }
+  @media (max-width:480px) {
+        width: 100%;
+  }  
+}
+.footer__locata {
+  width: 38%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  background-color: $sable;
+  @media (max-width:1039px) {
+        width: 37%;
+  }
+  @media (max-width:875px) {
+        width: 40%;
+  }
+  @media (max-width:480px) {
+        width: 100%;
+  }  
+}
+.footer__locatum {
+  padding: .5% 0 1% 0;
+}
+.icons {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    height: 150px;
+    background-color: $gray;
+    @media (max-width:799px) {
+      right: 0;
+    }
+    @media (max-width:480px) {
+     position: relative;
+     display: inline;
+    }
+}
+.ada {
+    background: url(../img/icon-ada.svg) 40% 55% no-repeat;
+    background-size: 40%;
+}
+.eho {
+    background: url(../img/icon-eho.svg) 40% 20% no-repeat;
+    background-size: 45%;
+}
+.ada, .eho {
+  width: 52px;
+  height: 52px;
+  @media (max-width:$mobile) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.footer__cta {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  background: $rouge;
+  color: $gray;
+  padding: 1% 1% 1% 1.5%;
+  margin: 1% 1% 1% 0;
+  font-family: Montserrat,arial,sans-serif;
+  font-size: .9em;
+  font-weight: 800;
+  letter-spacing: .06em;
+  span {
+    letter-spacing: .25em;
+    }
+    span span {
+        display: block;
+        letter-spacing: .25em;
+    }
+}
 
-.footer__contacta {}
-.footer__locata {}
+.footer__corporate {
+  display: inline-block;
+  font-family: "Libre Baskerville",serif;
+  font-weight: 600;
+}
+.footer__opening {
+  font-size: .7em;    
+  font-style: italic;
+  font-family: "Libre Baskerville",serif;
+  padding: 5% 0 5% 0;
+  @media (max-width: $mobile) {
+    padding: 3% 0;      
+  }
+}
+.footer__corporate-contacta {
+    font-style: normal;
+    font-size: .35em;
+    line-height: 1.9em;
+    letter-spacing: 1px;
+    a { display: block}
+}
 
-
-.footer__disclaimer {}
-.footer__disclaimer span {}
-
-
-.footer__signature {}
-
-
-.footer__locatum {}
-.footer__contactum {}
-
-
-#apt-phone {}
-#apt-email {}
-#apt-address {}
-#apt-city-state {}
+#apt-phone {
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: .45em;
+  height: 100%;
+}
+#apt-email {
+  font-size: .9em;
+  font-weight: 800;
+  letter-spacing: .13em;
+  height: 100%;
+}
+#apt-address {
+  white-space: pre;
+  font-size: 1.6em;
+  font-weight: 800;
+  height: 100%;
+  font-size: .8em;
+  letter-spacing: .3em;
+  text-align: center;
+}
+#apt-city-state {
+  font-weight: 800;
+  letter-spacing: .3em;
+  white-space: pre;
+  height: 100%;
+  font-size: 1.2em;
+  text-align: center;
+}
 
 
 #corporate-name {}
