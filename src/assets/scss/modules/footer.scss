@@ -49,6 +49,7 @@
   }
 }
 .footer__contactum {
+  @extend %valign-text;
   padding: 1.5%;
   background-color: $sable;
   @media (max-width: $mobile) {
@@ -201,13 +202,15 @@ background-size:auto, auto, contain, contain;
 }
 
 #apt-phone {
+  font-size: 0.9em;
   font-weight: 800;
   text-align: center;
   letter-spacing: .45em;
   height: 100%;
 }
 #apt-email {
-  font-size: .9em;
+  height: 100%;
+  font-size: 0.6em;
   font-weight: 800;
   letter-spacing: .13em;
   height: 100%;
