@@ -91,10 +91,6 @@
   display: inline-block;
   width:14%;
   vertical-align: top;
-  background-image:url(../img/border-right.svg), url(../img/border-left.svg),url(../img/border-top.svg), url(../img/border-bottom.svg), url(../img/graphic-signature.svg);
-  background-position:right top, left bottom, left top, left bottom, center;
-  background-repeat:repeat-y, repeat-y, repeat-x, repeat-x, no-repeat;
-background-size:auto, auto, contain, contain;
   background-color: $sable;
   @media (max-width:875px) {
         width: 28%;

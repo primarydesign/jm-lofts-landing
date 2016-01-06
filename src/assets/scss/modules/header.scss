@@ -135,10 +135,6 @@ $header-dimensions: (1.7947/16.2150);
 }
 
 .header__graphic {
-        background-image:url(../img/border-right.svg), url(../img/border-left.svg),url(../img/border-top.svg), url(../img/border-bottom.svg), url(../img/brand-building.svg);
-  background-position:right top, left bottom, left top, left bottom, center;
-  background-repeat:repeat-y, repeat-y, repeat-x, repeat-x, no-repeat;
-background-size:auto, auto, contain, contain, cover;
   @media (max-width: $mobile) {
     width: 20%;
   }

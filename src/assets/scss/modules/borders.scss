@@ -1,8 +1,35 @@
 .ragged {
-background-size:contain, contain, contain, contain,;
-        background-image:url(../img/border-right.svg), url(../img/border-left.svg),url(../img/border-top.svg), url(../img/border-bottom.svg);
-    background-position:right top, left bottom, left top, left bottom;
-    background-repeat:repeat-y, repeat-y, repeat-x, repeat-x;
-  background-size: auto;
-  background-origin:border-box;
+  background:
+    url(../img/border-bottom.png)    center calc(000% - 5px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-bottom.png)    center calc(100% + 5px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-vertical.png)  calc(100% - 1px) center  /  5px auto  repeat-y  border-box,
+    url(../img/border-vertical.png)  calc(000% + 1px) center  /  5px auto  repeat-y  border-box;
+  border: 2px solid $gray !important;
+}
+.ragged--sable {
+  background:
+    url(../img/border-bottom_sable.png)    center calc(000% - 1px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-bottom_sable.png)    center calc(100% + 1px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-vertical_sable.png)  calc(100% + 3px) center  /  15px auto  repeat-y  border-box,
+    url(../img/border-vertical_sable.png)  calc(000% - 3px) center  /  15px auto  repeat-y  border-box;
+  background-color: $gray;
+  border: 3px solid $sable;
+}
+.ragged--graphic {
+  background:
+    url(../img/border-bottom.png)    center calc(000% - 5px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-bottom.png)    center calc(100% + 5px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-vertical.png)  calc(100% - 1px) center  /  05px auto  repeat-y  border-box,
+    url(../img/border-vertical.png)  calc(000% + 1px) center  /  05px auto  repeat-y  border-box,
+    url(../img/brand-building.svg) center center / cover no-repeat border-box;
+  border: 2px solid $gray !important;
+}
+.ragged--signature {
+  background:
+    url(../img/border-bottom.png)      center calc(000% - 5px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-bottom.png)      center calc(100% + 5px)  /  auto 10px  repeat-x  border-box,
+    url(../img/border-vertical.png)    calc(100% - 1px) center  /  05px auto  repeat-y  border-box,
+    url(../img/border-vertical.png)    calc(000% + 1px) center  /  05px auto  repeat-y  border-box,
+    url(../img/graphic-signature.svg) center center / 80% no-repeat border-box;
+  border: 2px solid $gray !important;
 }
