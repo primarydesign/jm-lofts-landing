@@ -30,6 +30,6 @@
     url(../img/border-bottom.png)      center calc(100% + 5px)  /  auto 10px  repeat-x  border-box,
     url(../img/border-vertical.png)    calc(100% - 1px) center  /  05px auto  repeat-y  border-box,
     url(../img/border-vertical.png)    calc(000% + 1px) center  /  05px auto  repeat-y  border-box,
-    url(../img/graphic-signature.svg) center center / 80% no-repeat border-box;
+    url(../img/graphic-signature.svg) center center / auto 80% no-repeat border-box;
   border: 2px solid $gray !important;
 }
